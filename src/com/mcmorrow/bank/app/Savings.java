@@ -7,6 +7,8 @@ public class Savings extends Account {
 
     public Savings(String name, String sSN, int initDeposit) {
         super(name, sSN, initDeposit);
+        accountNumber = "1"+accountNumber;
+        System.out.println("Account Number: "+this.accountNumber);
         System.out.print("New Savings Account: ");
     }
 }
