@@ -3,8 +3,9 @@ package com.mcmorrow.bank.app;
 public class BankAccountApp {
 
     public static void main(String[] args) {
-        Checking check1 = new Checking("Tom Wilson","1204857343",1500);
-
-        Savings sav1 = new Savings("Rich Love","14523575432",2500);
+        Checking check1 = new Checking("Tommy Wilson","1204857343",1500);
+        check1.showInfo();
+        Savings sav1 = new Savings("Richey Love","14523575432",2500);
+        sav1.showInfo();
     }
 }

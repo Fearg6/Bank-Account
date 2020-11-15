@@ -11,4 +11,9 @@ public class Savings extends Account {
         System.out.println("Account Number: "+this.accountNumber);
         System.out.print("New Savings Account: ");
     }
+
+    public void showInfo(){
+        super.showInfo();
+        System.out.println("Account Type: Savings");
+    }
 }
