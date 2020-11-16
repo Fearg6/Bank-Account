@@ -8,12 +8,25 @@ public class Savings extends Account {
     public Savings(String name, String sSN, int initDeposit) {
         super(name, sSN, initDeposit);
         accountNumber = "1"+accountNumber;
-        System.out.println("Account Number: "+this.accountNumber);
-        System.out.print("New Savings Account: ");
+        setSafetyDepositBox();
+    }
+
+    private void setSafetyDepositBox() {
+        while (safetyDepositBoxID<=100) {
+            safetyDepositBoxID = (int) (Math.random()*Math.pow(10,3));
+        }
+        while (safetyDepositBoxKey<=1000) {
+            safetyDepositBoxKey =  (int) (Math.random()*Math.pow(10,4));
+        }
     }
 
     public void showInfo(){
         super.showInfo();
-        System.out.println("Account Type: Savings");
+        System.out.println(
+                "Your Savings Accounts Features" +
+                        "\nSafety Deposit Box ID: "+ safetyDepositBoxID+
+                        "\nSafety Deposit Box Key: "+safetyDepositBoxKey
+
+        );
     }
 }

@@ -30,9 +30,10 @@ public abstract class Account implements IBaseRate {
 
     public void showInfo(){
         System.out.println(
-                "Name: "+name+
-                        " Account Number: "+accountNumber+
-                        " Balance: "+balance);
+                "***********"+
+                        "\nName: "+name+
+                        "\nAccount Number: "+accountNumber+
+                        "\nBalance: "+balance);
     }
 
 }
