@@ -12,6 +12,11 @@ public class Checking extends Account {
 
     }
 
+    @Override
+    public void setRate() {
+        rate = getBaseRate() * .15;
+    }
+
     private void setDebitCard() {
         while (debitCardNumber<100000000000L) {
             debitCardNumber = (long) (Math.random()*Math.pow(10,12));

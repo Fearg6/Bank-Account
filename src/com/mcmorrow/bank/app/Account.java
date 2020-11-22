@@ -18,11 +18,13 @@ public abstract class Account implements IBaseRate {
         index++;
         this.accountNumber = setAccountNumber();
 
-
+        setRate();
     }
 
+    public abstract void setRate();
+
     private String setAccountNumber(){
-        String lastTwoOfSSN = sSN.substring(sSN.length()-2,sSN.length());
+        String lastTwoOfSSN = sSN.substring(sSN.length()-2);
         int randomNumber = (int) (Math.random()*Math.pow(10,3));
         int uniqueID = index;
         return lastTwoOfSSN+uniqueID+randomNumber;
@@ -33,7 +35,8 @@ public abstract class Account implements IBaseRate {
                 "***********"+
                         "\nName: "+name+
                         "\nAccount Number: "+accountNumber+
-                        "\nBalance: "+balance);
+                        "\nBalance: "+balance+
+                        "\nRate: "+rate+"%");
     }
 
 }
