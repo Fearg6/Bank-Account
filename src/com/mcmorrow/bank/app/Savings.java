@@ -14,6 +14,7 @@ public class Savings extends Account {
     @Override
     public void setRate() {
         rate = getBaseRate() - .25;
+        printBalance();
     }
 
     private void setSafetyDepositBox() {
