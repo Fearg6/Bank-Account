@@ -1,8 +1,8 @@
 package com.mcmorrow.bank.app;
 
 public class Checking extends Account {
-    long debitCardNumber;
-    int debitCardPIN;
+    private long debitCardNumber;
+    private int debitCardPIN;
 
 
     public Checking(String name, String sSN, int initDeposit) {

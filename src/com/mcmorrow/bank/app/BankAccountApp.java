@@ -10,7 +10,7 @@ public class BankAccountApp {
         sav1.compound();
 
         check1.showInfo();
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("******************");
         sav1.showInfo();
 
 

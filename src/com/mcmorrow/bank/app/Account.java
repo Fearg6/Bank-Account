@@ -1,13 +1,13 @@
 package com.mcmorrow.bank.app;
 
 public abstract class Account implements IBaseRate {
-    String name;
-    String sSN;
-    double balance;
+    private String name;
+    private String sSN;
+    private double balance;
 
-    static int index = 10000;
-    String accountNumber;
-    double rate;
+    private static int index = 10000;
+    protected String accountNumber;
+    protected double rate;
 
 
     public Account(String name, String sSN, int initDeposit){
@@ -30,10 +30,12 @@ public abstract class Account implements IBaseRate {
         return lastTwoOfSSN+uniqueID+randomNumber;
     }
 
+
     public void compound(){
         double accruedInterest = balance - (rate/100);
         balance += accruedInterest;
         System.out.println("Accrued Interest: €"+accruedInterest);
+        printBalance();
     }
 
     public void deposit(double amount){
