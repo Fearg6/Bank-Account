@@ -5,7 +5,7 @@ import java.util.List;
 public class BankAccountApp {
 
     public static void main(String[] args) {
-        String file = "C:\\Users\\fearg\\OneDrive\\Projects\\Java\\Bank-Account\\src\\utilities\\NewBankAccounts.csv";
+        String file = "C:\\Users\\fearg\\Dropbox\\Projects\\Java\\Bank-Account\\src\\utilities\\NewBankAccounts.csv";
 
 
 //        Checking check1 = new Checking("Tommy Wilson","1204857343",1500);
