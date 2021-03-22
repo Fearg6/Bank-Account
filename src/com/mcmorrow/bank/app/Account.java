@@ -10,7 +10,7 @@ public abstract class Account implements IBaseRate {
     protected double rate;
 
 
-    public Account(String name, String sSN, int initDeposit){
+    public Account(String name, String sSN, double initDeposit){
         this.name = name;
         this.sSN = sSN;
         this.balance= initDeposit;
